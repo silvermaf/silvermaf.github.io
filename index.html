@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>PSport</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#311b92"/>
+  <meta name="description" content="Premier Sport"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icon/icon.png">
+
+</head>
+<body onload="preLoader()">
+  <!-- Navigasi -->
+  <nav class="deep-purple darken-4" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo" id="logo-container">PSport</a>
+      <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+        
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+  <!-- Content -->
+  <div id="preload" class="progress">
+    <div id="inde" class="indeterminate"></div>
+  </div>
+  <div class="container" id="body-content"></div>
+
+  <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/registerSw.js"></script>
+  <script src="js/requestApi.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+</html>
